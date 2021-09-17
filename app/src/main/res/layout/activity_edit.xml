@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="app.activity.ActivityEdit"
+  android:layoutDirection="rtl">
+
+
+  <EditText
+    android:id="@+id/edt_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:textColor="#262626"
+    android:hint="نام جدید را وارد کنید"/>
+
+
+
+    <Button
+      android:id="@+id/btn_edit"
+      android:layout_below="@+id/edt_title"
+      android:text="ویرایش نام پست"
+      android:layout_width="match_parent"
+      android:textSize="15dp"
+      android:textColor="#262626"
+      android:layout_marginTop="10dp"
+      android:layout_height="wrap_content"/>
+
+    <ProgressBar
+      android:id="@+id/progress"
+      android:layout_below="@+id/btn_edit"
+      android:layout_width="wrap_content"
+      android:layout_centerInParent="true"
+      android:visibility="gone"
+      android:layout_marginTop="10dp"
+      android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
